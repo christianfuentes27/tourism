@@ -333,3 +333,68 @@ body {
 }
 
 /*----------------------- POPULAR DESTINATIONS */
+.destination-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 100px 0;
+}
+
+.destination-item {
+    width: 470px;
+    height: auto;
+    margin: 0 20px;
+}
+
+.destination-item img {
+    width: 100%;
+    height: 300px;
+}
+
+.destination-content {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    border: 1px solid rgb(138, 138, 138);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.destination-content h4 {
+    font-size: 21px;
+    font-weight: 500;
+    margin: 25px 0;
+}
+
+.destination-content p {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 30px;
+    margin-bottom: 30px;
+    line-height: 23px;
+}
+
+.destination-img {
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.destination-sidney {
+    background-image: url(img/home/destination/sidney.jpg);
+}
+
+.destination-melbourne {
+    background-image: url(img/home/destination/melbourne.jpg);
+}
+
+.destination-perth {
+    background-image: url(img/home/destination/perth.jpg);
+}
+

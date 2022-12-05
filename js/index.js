@@ -1,14 +1,11 @@
-import Swiper, { Navigation, Pagination } from 'swiper';
-
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-
-const swiper = new Swiper('.routes-container', {
-    direction: 'horizontal',
-    pagination: {
-        el: '.swiper-pagination'
-    }
+window.addEventListener('load', () => {
+    new Glider(document.querySelector('.glider'), {
+        slidesToShow: 1,
+        dots: '.glider-dots'
+    });
 });
 
-swiper.slideNext();
+// document.querySelectorAll('.glider-dot');
+// .forEach((dot, index) => {
+//     dot.setAttribute('day', index);
+// })

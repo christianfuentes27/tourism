@@ -772,9 +772,18 @@ td:has(> img) {
 
 /*----------------------- ROUTES */
 .routes {
-    height: 100%;
+    height: auto;
     width: 100%;
     position: relative;
+}
+
+.route-title {
+    margin: 50px;
+    color: #0E243A;
+    font-size: 45px;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
 }
 
 .glider-contain {
@@ -801,8 +810,8 @@ td:has(> img) {
 .glider-dots {
     position: absolute;
     width: 431px;
-    bottom: 90px;
-    left: 72px;
+    bottom: 105px;
+    left: 70px;
 }
 
 .glider-dots::before {
@@ -836,8 +845,8 @@ td:has(> img) {
     width: fit-content;
     display: flex;
     flex-wrap: wrap;
-    bottom: 45px;
-    left: 56px;
+    bottom: 55px;
+    left: 52px;
 }
 
 .days p:first-child {
@@ -883,27 +892,82 @@ td:has(> img) {
 }
 
 .route-content p {
+    width: 100%;
     font-weight: 200;
-    font-size: 18px;
+    font-size: 16px;
+    letter-spacing: 1px;
     line-height: 36px;
 }
 
 .route-1 {
-    background-image: url(img/routes/camellos.webp);
+    background-image: url(img/routes/surfers/surf-2.jpg);
 } 
 
 .route-2 {
-    background-image: url(img/routes/canberra.webp);
+    background-image: url(img/routes/surfers/whitehaven.jpg);
 } 
 
 .route-3 {
-    background-image: url(img/routes/hero-2.webp);
+    background-image: url(img/routes/surfers/cable-beach.jpg);
 } 
 
 .route-4 {
-    background-image: url(img/routes/Horseshoe-Bay-Beach-South-West-Rocks_Mandatory-credit-Destination-NSW-2-scaled.webp);
+    background-image: url(img/routes/surfers/Wineglass-Bay.jpg);
 }
 
 .route-5 {
-    background-image: url(img/routes/hume-lake.webp);
+    background-image: url(img/routes/surfers/palmcove.jpg);
 } 
+
+.route-6 {
+    background-image: url(img/routes/surfers/12-apostles.jpg);
+}
+
+.route-7 {
+    background-image: url(img/routes/wildlife/kangaroo-2.jpg);
+}
+
+.route-8 {
+    background-image: url(img/routes/wildlife/koala.jpg);
+}
+
+.route-9 {
+    background-image: url(img/routes/wildlife/whale.jpg);
+}
+
+.route-10 {
+    background-image: url(img/routes/wildlife/tasmania.jpg);
+}
+
+.route-11 {
+    background-image: url(img/routes/wildlife/dingo.jpg);
+}
+
+.route-12 {
+    background-image: url(img/routes/wildlife/wombat.jpg);
+}
+
+.route-13 {
+    background-image: url(img/routes/cities/sidney.jpg);
+}
+
+.route-14 {
+    background-image: url(img/routes/cities/canberra.jpg);
+}
+
+.route-15 {
+    background-image: url(img/routes/cities/humelake.jpg);
+}
+
+.route-16 {
+    background-image: url(img/routes/cities/park.jpg);
+}
+
+.route-17 {
+    background-image: url(img/routes/cities/Kiama.jpg);
+}
+
+.route-18 {
+    background-image: url(img/routes/cities/melbourne.jpg);
+}
+

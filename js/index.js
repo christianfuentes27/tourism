@@ -14,8 +14,3 @@ window.addEventListener('load', () => {
         dots: '.glider-dots3'
     });
 });
-
-// document.querySelectorAll('.glider-dot');
-// .forEach((dot, index) => {
-//     dot.setAttribute('day', index);
-// })

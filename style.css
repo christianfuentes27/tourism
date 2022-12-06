@@ -33,6 +33,9 @@ body {
     align-items: center;
     margin: auto;
     padding-top: 20px;
+}
+
+.home-header {
     text-shadow: 6px 6px 8px rgb(68, 68, 68);
 }
 
@@ -141,7 +144,7 @@ body {
 .section-title h4 {
     text-transform: uppercase;
     font-size: 32px;
-    font-weight: 100;
+    font-weight: 200;
     line-height: 43px;
     margin: 0;
 }
@@ -971,3 +974,23 @@ td:has(> img) {
     background-image: url(img/routes/cities/melbourne.jpg);
 }
 
+/*------------------------------------------------------------------------ CONTACT */
+/*----------------------- HERO */
+.howto-hero {
+    width: 100%;
+    height: 500px;
+    background-image: url(img/howto/hero/howto-hero.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.howto-hero-text {
+    bottom: 40px;
+    right: 450px;
+    text-shadow: 6px 6px 8px rgb(68, 68, 68);
+}
+
+.header-howto {
+    text-shadow: 6px 6px 8px rgb(68, 68, 68)
+}

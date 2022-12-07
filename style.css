@@ -1549,6 +1549,53 @@ iframe {
         padding-top: 50px;
         padding-left: 30px;
     }
+
+    /*----------------------- HISTORY */
+    .history-container:first-child {
+        margin-top: 50px;
+    }
+
+    .history-container {
+        margin: 20px 0;
+    }
+
+    .history-middle {
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .history-middle h4 {
+        text-align: center;
+    }
+    
+    .history p {
+        box-sizing: border-box;
+        padding: 0 20px;
+        text-align: justify;
+    }
+    
+    .history-item {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .history-content {
+        width: 100%;
+        margin: 20px 0;
+    }
+    
+    .history-content h4 {
+        text-align: center;
+    }
+    
+    .history-img {
+        width: 100%;
+        padding-bottom: 50%;
+    }
+
+    .left-text {
+        order: -1;
+    }
 }
 
 @media only screen and (max-width: 500px) {
@@ -1617,5 +1664,40 @@ iframe {
 
     .feature-text span {
         font-size: 15px;
+    }
+
+    /*----------------------- HISTORY */
+    .history-container {
+        margin: 0;
+    }
+
+    .history-middle {
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .history p {
+        line-height: 30px;
+        margin: 20px 0;
+    }
+    
+    .history-content {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .history-middle h4,
+    .history-content h4 {
+        font-size: 19px;
+    }
+    
+    .history-img,
+    .origins-img,
+    .federation-img {
+        padding-bottom: 100%;
+    }
+
+    .origins-img {
+        background-position: right center;
     }
 }

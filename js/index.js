@@ -1,16 +1,32 @@
-window.addEventListener('load', () => {
-    new Glider(document.querySelector('.glider-1'), {
-        slidesToShow: 1,
-        dots: '.glider-dots'
-    });
+const menuBtn = document.querySelector('.menu-btn');
+const menuItems = document.querySelector('.navbar');
+const menu = document.querySelectorAll('.menu a');
 
-    new Glider(document.querySelector('.glider-2'), {
-        slidesToShow: 1,
-        dots: '.glider-dots2'
-    });
-
-    new Glider(document.querySelector('.glider-3'), {
-        slidesToShow: 1,
-        dots: '.glider-dots3'
-    });
+menuBtn.addEventListener('click', () => {
+    menuBtn.classList.toggle('cross');
+    menuItems.classList.toggle('open');
+    let display;
+    if (menuBtn.classList.contains('cross')) {
+        display = "block";
+    } else {
+        display = "none";
+    }
+    handleNavbar(display);
 });
+
+let mediaQuery = window.matchMedia("(min-width: 1100px)");
+mediaQuery.addEventListener('change', () => {
+    let display;
+    if (mediaQuery.matches) {
+        display = "block";
+    } else if (menuBtn.classList.contains('cross')){
+        display = "block";
+    } else {
+        display = "none";
+    }
+    handleNavbar(display);
+});
+
+function handleNavbar(display) {
+    menu.forEach(a => a.style.display = display);
+}

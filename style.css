@@ -1443,7 +1443,58 @@ iframe {
 }
 
 /*------------------------------------------------------------------------ MEDIA QUERYS */
+@media only screen and (max-width: 1250px) {
+
+    /*----------------------- FOOTER */
+    .footer-black {
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-container {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer-logo {
+        justify-content: center;
+        margin: 40px 0;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+    .contact-info h4 {
+        margin-left: 50px;
+    }
+
+    .contact-info {
+        margin-left: 75px;
+        margin-bottom: 40px;
+    }
+
+    .learn {
+        display: none;
+    }
+
+    .contact-info,
+    .partners {
+        width: fit-content;
+    }
+}
+
 @media only screen and (max-width: 1100px) {
+
     /*----------------------- HEADER */
     .header {
         width: 100%;
@@ -1741,5 +1792,92 @@ iframe {
 
     .galleryback h4 {
         font-size: 22px;
+    }
+
+    /*----------------------- FOOTER */
+    .footer-logo-img {
+        width: 40px;
+    }
+
+    .footer-logo-title {
+        font-size: 24px;
+    }
+
+    .copy-container {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .copy-container p {
+        margin-top: 0;
+        font-size: 11px;
+    }
+
+    .copy-features {
+        font-size: 11px;
+    }
+
+    .partners-content img {
+        height: 70px;
+        margin: 5px 15px;
+        cursor: pointer;
+    }
+
+    .partners-content table {
+        margin: auto;
+    }
+
+    .footer-content {
+        width: 100%;
+    }
+
+    .partners {
+        width: 100%;
+    }
+
+    .partners-content {
+        width: 100%;
+    }
+
+    .footer-content h4 {
+        font-size: 22px;
+    }
+
+    .partners h4 {
+        margin: 30px auto;
+        text-align: center;
+    }
+
+    .contact-info {
+        width: 100%;
+    }
+
+    .contact-info table {
+        margin: auto;
+    }
+
+    .contact-info h4 {
+        margin: 30px auto;
+        text-align: center;
+    }
+
+    .contact-info {
+        margin: 0;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+    .contact-info td {
+        font-size: 16px;
+    }
+
+    .contact-info img {
+        height: 24px;
+    }
+
+    .rrss-container {
+        width: fit-content;
+        margin: auto;
+        margin-top: 10px;
     }
 }

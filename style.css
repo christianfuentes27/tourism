@@ -1130,22 +1130,30 @@ td:has(> img) {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 75px;
 }
 
 .accommodation-item {
-    width: 90%;
+    width: 93.75%;
     border: 1px solid rgb(68, 68, 68);
-    height: 450px;
-    margin: 40px;
+    height: auto;
+    margin: 0 40px 40px 40px;
+    display: flex;
 }
 
 .hotel-img {
-    width: 800px;
+    width: 40%;
     height: 100%;
     box-sizing: border-box;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+}
+
+.hotel-content {
+    width: 60%;
+    box-sizing: border-box;
+    padding: 15px 40px;
 }
 
 .hotel-content h4 {
@@ -1154,8 +1162,18 @@ td:has(> img) {
     margin: 20px 0;
 }
 
+.hotel-content p {
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #141414;
+    margin: 30px 0;
+    line-height: 28px;
+}
+
 .hotel-location {
-    font-size: 15px;
+    margin: 10px 0;
+    font-size: 17px;
     font-weight: 300;
     text-transform: uppercase;
     color: #6D6D6D;
@@ -1166,18 +1184,81 @@ td:has(> img) {
     content: "";
     display: block;
     width: 170px;
-    padding-bottom: 10px;
+    padding-bottom: 25px;
     border-bottom: 1px solid rgb(121, 121, 121);
 }
 
+.hotel-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
+.hotel-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
 
+.hotel-info p {
+    color: #6D6D6D;
+    font-weight: 300;
+    font-size: 18px;
+    margin-right: 40px;
+}
 
+.price {
+    font-size: 28px;
+    font-weight: 400;
+}
 
+.price span {
+    font-size: 12px;
+    font-weight: 300;
+    color: #6D6D6D;
+}
 
-
-
+.check-btn {
+    color: white;
+    background-color: #0E243A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 230px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 200;
+    cursor: pointer;
+}
 
 .hotel-1 {
     background-image: url(img/howto/hotels/hotel1-card.jpg);
+}
+
+.hotel-2 {
+    background-image: url(img/howto/hotels/hotel2-card.jpg);
+}
+
+.hotel-3 {
+    background-image: url(img/howto/hotels/hotel3-card.jpg);
+}
+
+.more-accommodations-btn {
+    color: white;
+    background-color: #0E243A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    width: 290px;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 200;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 60px;
 }

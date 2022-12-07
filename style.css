@@ -570,10 +570,12 @@ body {
     justify-content: center;
     padding-top: 50px;
     padding-bottom: 100px;
+    transition: all .3s ease-in-out;
 }
 
 .gallery-item {
     width: 31%;
+    min-width: 450px;
     height: 400px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -1442,7 +1444,6 @@ iframe {
 
 /*------------------------------------------------------------------------ MEDIA QUERYS */
 @media only screen and (max-width: 1100px) {
-
     /*----------------------- HEADER */
     .header {
         width: 100%;
@@ -1495,6 +1496,7 @@ iframe {
 
     .home-container {
         height: calc(100% - 90px);
+        width: 100%;
     }
 
     .home-items {
@@ -1729,5 +1731,15 @@ iframe {
         width: 230px;
         height: 55px;
         margin-right: 10px;
+    }
+
+    /*----------------------- GALLERY */
+    .gallery-item {
+        min-width: unset;
+        width: 95%;
+    }
+
+    .galleryback h4 {
+        font-size: 22px;
     }
 }

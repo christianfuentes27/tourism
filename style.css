@@ -1444,7 +1444,6 @@ iframe {
 
 /*------------------------------------------------------------------------ MEDIA QUERYS */
 @media only screen and (max-width: 1250px) {
-
     /*----------------------- FOOTER */
     .footer-black {
         height: auto;
@@ -1490,6 +1489,24 @@ iframe {
     .contact-info,
     .partners {
         width: fit-content;
+    }
+
+    /*----------------------- EXPERIENCE OF TRAVELING */
+    .experience-container {
+        width: 100%;
+    }
+
+    .experience-container p {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 20px;
+    }
+
+    .experience-img {
+        width: 100%;
+        box-sizing: border-box;
+        height: unset;
+        padding-bottom: 75%;
     }
 }
 
@@ -1879,5 +1896,31 @@ iframe {
         width: fit-content;
         margin: auto;
         margin-top: 10px;
+    }
+
+    /*----------------------- ROUTES */
+    .hero-text {
+        font-size: 36px;
+    }
+
+    .routes-hero-text {
+        bottom: 20px;
+        left: 30px;
+    }
+
+    /*----------------------- EXPERIENCE OF TRAVELING */
+    .experience-container {
+        padding-bottom: 0;
+    }
+
+    .experience-container p {
+        font-size: 16px;
+        line-height: 30px;
+        text-align: justify;
+    }
+
+    .experience-img {
+        width: 100%;
+        padding-bottom: 100%;
     }
 }

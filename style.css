@@ -1130,6 +1130,7 @@ td:has(> img) {
 
 .main-airports-item {
     width: 450px;
+    margin: 20px 0;
 }
 
 .airport-content {
@@ -1220,6 +1221,7 @@ td:has(> img) {
     height: auto;
     margin: 0 40px 40px 40px;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .hotel-img {
@@ -1233,6 +1235,8 @@ td:has(> img) {
 
 .hotel-content {
     width: 60%;
+    height: auto;
+    min-width: 700px;
     box-sizing: border-box;
     padding: 15px 40px;
 }
@@ -1329,8 +1333,6 @@ td:has(> img) {
 }
 
 .more-accommodations-btn {
-    color: white;
-    background-color: #0E243A;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1338,10 +1340,19 @@ td:has(> img) {
     width: 290px;
     text-transform: uppercase;
     font-size: 16px;
-    font-weight: 200;
     cursor: pointer;
     margin-top: 20px;
     margin-bottom: 60px;
+    font-weight: 400;
+    color: #0E243A;
+    border: 1px solid #0E243A;
+    background: transparent;
+    transition: all .3s ease-in-out;
+}
+
+.more-accommodations-btn:hover {
+    background-color: #0E243A;
+    color: white;
 }
 
 /*------------------------------------------------------------------------ CONTACT */
@@ -1594,6 +1605,17 @@ iframe {
     .howto-container p {
         padding-bottom: 40px;
     }
+
+    /*----------------------- STAY AND ACCOMMODATION*/
+    .hotel-img {
+        width: 100%;
+        height: 500px;
+    }
+
+    .hotel-content {
+        width: 100%;
+        min-width: unset;
+    }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -1832,6 +1854,10 @@ iframe {
     }
 
     /*----------------------- HOW TO GET TO */
+    .howto-container {
+        padding-bottom: 0;
+    }
+
     .howto-container p {
         padding: 0 30px 60px 30px;
     }
@@ -1840,6 +1866,32 @@ iframe {
         height: unset;
         box-sizing: border-box;
         padding-bottom: 100%;
+    }
+
+    .airplane-routes {
+        display: none;
+    }
+
+    /*----------------------- STAY AND ACCOMMODATION*/
+    .accommodation-item {
+        width: 95%;
+        margin: 0;
+        margin: 20px auto;
+    }
+
+    .hotel-info p {
+        display: none;
+    }
+
+    .hotel-img {
+        width: 100%;
+        height: 500px;
+    }
+
+    .hotel-content {
+        width: 100%;
+        min-width: unset;
+        padding: 15px 20px;
     }
 }
 
@@ -2146,5 +2198,34 @@ iframe {
         padding: 0 20px 40px 20px;
         line-height: 30px;
         text-align: justify;
+    }
+
+    .airport-content {
+        height: auto;
+    }
+
+    .book-flight {
+        margin: 10px 20px 20px 20px;
+        position: static;
+        cursor: pointer;
+    }
+
+    .main-airports-item {
+        width: 95%;
+        margin: 20px 0;
+    }
+
+    /*----------------------- STAY AND ACCOMMODATION*/
+    .hotel-img {
+        width: 100%;
+        height: 500px;
+    }
+
+    .hotel-content {
+        padding: 15px;
+    }
+
+    .check-btn {
+        margin-top: 10px;
     }
 }

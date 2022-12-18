@@ -242,11 +242,19 @@ body {
 
 .welcome-text {
     width: 42%;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 40px;
     letter-spacing: 2px;
     margin-left: 60px;
     color: #141414;
+}
+
+.welcome-text span {
+    font-weight: 600;
+}
+
+p span {
+    font-weight: 600;
 }
 
 .welcome-img {
@@ -628,7 +636,7 @@ body {
 }
 
 .gallery-8 {
-    background-image: url(img/home/gallery/gallery-8.jpg);
+    background-image: url(img/home/gallery/uluru.jpg);
 }
 
 .gallery-9 {
@@ -1148,6 +1156,7 @@ td:has(> img) {
 }
 
 .airport-content p {
+    line-height: 20px;
     box-sizing: border-box;
     padding: 0 20px;
     color: #141414;
